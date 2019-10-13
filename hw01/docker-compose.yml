@@ -1,0 +1,20 @@
+version: '3.7'
+services:
+  web:
+#    build: nginx
+    image: "tishenko/hw01-web:0.2"
+
+#    image: image_name
+    ports:
+      - "80:80"
+#80    networks:
+#      - net_name
+  app:
+#    build: app
+    image: "tishenko/hw01-app:0.2"
+#    ports:
+#      - "4567:4567"
+#    networks:
+#      - net_name
+#networks:
+#  net_name
